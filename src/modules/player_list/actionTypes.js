@@ -1,0 +1,12 @@
+export const ADD_PLAYER = 'player_list::add_player';
+export const REMOVE_PLAYER = 'player_list::remove_player';
+export const CHANGE_PLAYER_NAME = 'player_list::change_player_name';
+export const ADD_POINTS = 'player_list::add_points';
+export const REMOVE_POINTS = 'player_list::remove_points';
+export const SET_POINTS = 'player_list::set_points';
+export const SET_CURRENT_PLAYER = 'player_list::set_current_player';
+export const RESET_RIGHT_TO_MOVE = 'player_list::reset_right_to_move';
+export const REMOVE_RIGHT_TO_MOVE = 'player_list::remove_right_to_move';
+export const RESET_RIGHT_TO_MOVE_TO_ALL = 'player_list::reset_right_to_move_to_all';
+export const ADD_BONUS = 'player_list::add_bonus';
+export const REMOVE_BONUSES = 'player_list::remove_bonus';

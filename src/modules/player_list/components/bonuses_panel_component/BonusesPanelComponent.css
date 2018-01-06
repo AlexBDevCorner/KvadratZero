@@ -1,0 +1,9 @@
+.bonus-panel-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.bonus-panel-item {
+  border: 1px solid;
+  text-align: center;
+}
