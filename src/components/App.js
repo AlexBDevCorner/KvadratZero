@@ -1,18 +1,25 @@
 import React, { Component } from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
-import { withRouter } from 'react-router';
+import { HashRouter as Router } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import Routes from '../routes';
 import { connect } from 'react-redux';
+
+import store from '../rootReducer';
 
 import { ipcRenderer as ipc } from 'electron';
 
 class App extends Component {
   render() {
     return (
-      <div className="app">
-        {this.props.children}
-      </div>
+      <Provider store={store}>
+        <Router>
+          <div className="app">
+              <Routes />
+          </div>
+        </Router>
+      </Provider>
     );
   }
 }
 
-export default connect()(App);
+export default App;
