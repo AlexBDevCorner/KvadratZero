@@ -1,15 +1,19 @@
-import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import React from 'react'
+import { Route, Switch } from 'react-router-dom'
 
-import playerListModule from './modules/player_list';
+import playerListModule from './modules/player_list'
+import Screens from './screens'
 
-const { PlayerPanelContainer } = playerListModule.components;
+const {
+  MainMenuScreen,
+  CreateGameScreen
+ } = Screens
 
 export default () => (
   <Switch>
-    <Route exact path="/" render={() => (<PlayerPanelContainer playerCount="6" />)} />
-    <Route path="/create_game" component={PlayerPanelContainer} />
-    <Route path="/new_game" component={PlayerPanelContainer} />
-    <Route path="/load_game" component={PlayerPanelContainer} />
+    <Route exact path="/" component={MainMenuScreen} />
+    <Route path="/create_game" component={CreateGameScreen} />
+    <Route path="/new_game" component={CreateGameScreen} />
+    <Route path="/load_game" component={CreateGameScreen} />
   </Switch>
 );
