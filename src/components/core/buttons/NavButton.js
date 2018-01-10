@@ -7,10 +7,9 @@ class NavButton extends Component {
 
   constructor() {
     super()
-    this.navigateTo = this.navigateTo.bind(this)
   }
 
-  navigateTo() {
+  navigateTo = () => {
     const { history, path } = this.props
     history.push(`/${path}`)
   }

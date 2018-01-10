@@ -7,5 +7,5 @@
       "plugins": ["transform-es2015-modules-commonjs"]
     }
   },
-  "presets": ["react-app"]
+  "presets": ["react", "es2015", "stage-1"]
 }
