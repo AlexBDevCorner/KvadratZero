@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default ({ formats, gameConfig, action }) => (
+export default ({ formats, gridFormat, action }) => (
   <div>
     {
       Object.values(formats).map(
-        (form) => <div key={form} onClick={() => action(form)}>{`${form} X ${form} current : ${gameConfig.gridFormat}`}</div>)
+        (form) => <div key={form} onClick={() => action(form)}>{`${form} X ${form} current : ${gridFormat}`}</div>)
     }
   </div>
 )

@@ -11,8 +11,8 @@ const { selectors, actions } = GameConfigModule
 class GridFormatContainer extends Component {
 
   render() {
-    const { gameConfig, setGridFormat } = this.props;
-    return <GridFormatComponent formats={formats} gameConfig={gameConfig} action={setGridFormat} />
+    const { gridFormat, setGridFormat } = this.props;
+    return <GridFormatComponent formats={formats} gridFormat={gridFormat} action={setGridFormat} />
   }
 
 }
@@ -22,4 +22,4 @@ const matchDispatchToProps = dispatch => bindActionCreators(
 )
 
 
-export default connect(selectors.getGameConfig, matchDispatchToProps)(GridFormatContainer)
+export default connect(selectors.getGridFormat, matchDispatchToProps)(GridFormatContainer)
