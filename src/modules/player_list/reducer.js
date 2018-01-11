@@ -1,5 +1,5 @@
 import * as actionTypes from './actionTypes';
-import { createPlayer, createBonus } from './model';
+import { createPlayer, createBonus } from './models';
 
 const INITIAL_STATE = [];
 

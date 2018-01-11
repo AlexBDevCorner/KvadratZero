@@ -1,4 +1,4 @@
-export const createPlayer = (player) => ({
+export const createPlayer = (player = {}) => ({
   name : player.name || 'default player name',
   points : player.points || 0,
   isCurrent : player.isCurrent || false,
@@ -6,9 +6,9 @@ export const createPlayer = (player) => ({
   bonuses : player.bonuses || []
 });
 
-export const createBonus = (bonus) => ({
+export const createBonus = (bonus = {}) => ({
   actionType : bonus.actionType || 'default bonus action type',
   name : bonus.name || 'default bonus name',
   turns : bonus.turns || 0,
-  modifier : bonus.modifier || ((x) => x)
+  modifier : bonus.modifier || function modifier(x) { return x }
 });

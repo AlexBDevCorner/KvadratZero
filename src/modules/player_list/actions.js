@@ -1,6 +1,6 @@
 import * as actionTypes from './actionTypes';
 import { compose } from '../../helpers/GeneralHelper';
-import { createBonus } from './model';
+import { createBonus } from './models';
 
 //ADD_PLAYER ACTION CREATORS
 

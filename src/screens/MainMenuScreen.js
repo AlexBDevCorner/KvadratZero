@@ -6,6 +6,7 @@ export default () => (
     <Buttons.NavButton path="create_game" text="Создать"/>
     <Buttons.NavButton path="start_game" text="Начать"/>
     <Buttons.NavButton path="load_game" text="Загрузить"/>
+    <Buttons.NavButton path="edit_game" text="Редактировать"/>
     <Buttons.ExitButton text="Выйти"/>
   </div>
 );

@@ -9,7 +9,7 @@ describe('question grid actions tests', () => {
 
       const expectedAction = {
         type : actionTypes.ADD_QUESTIONS,
-        questionCount : 8
+        questionAmount : 8
       }
 
       expect(actions.createAddQuestionsAction(8)).toEqual(expectedAction)
@@ -25,7 +25,7 @@ describe('question grid actions tests', () => {
       const question = {
         id : 1,
         text : "aa",
-        events : "",
+        events : [],
         points : 0
       }
 

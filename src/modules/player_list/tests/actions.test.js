@@ -1,7 +1,7 @@
 import * as actions from '../actions';
 import * as actionTypes from '../actionTypes';
 import bonusList from '../services/bonusList';
-import { createPlayer, createBonus } from '../model';
+import { createPlayer, createBonus } from '../models';
 
 describe('Player actions tests :', () => {
 
