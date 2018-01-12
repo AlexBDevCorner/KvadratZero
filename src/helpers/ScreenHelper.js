@@ -1,5 +1,5 @@
-import { ipcRenderer as ipc } from 'electron';
+import { ipcRenderer as ipc } from 'electron'
 
 export const getScreenSize = () => {
-    ipc.send('screensize:get');
+    ipc.send('screensize:get')
 };
