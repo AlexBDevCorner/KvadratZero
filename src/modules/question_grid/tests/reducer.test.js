@@ -12,7 +12,7 @@ describe('question grid reducer tests :', () => {
 
   describe('ADD_QUESTIONS action handling tests :', () => {
 
-    it('should update reducer with 8 questions', () => {
+    it('should update state with 8 questions', () => {
 
       const addQuestionsAction = {
         type : actionTypes.ADD_QUESTIONS,
@@ -91,6 +91,51 @@ describe('question grid reducer tests :', () => {
       expect(finalState.questions[0]).toEqual({
         ...initialState.questions[0],
         points : 15
+      })
+
+    })
+
+  })
+
+  describe('ADD_THEMES action handling tests :', () => {
+
+    it('should update state with 8 themes', () => {
+
+      const addThemesAction = {
+        type : actionTypes.ADD_THEMES,
+        themeAmount : 8
+      }
+
+      expect(reducer(undefined, addThemesAction).themes.length).toBe(8)
+    })
+
+  })
+
+  describe('EDIT_THEME action handling tests :', () => {
+
+    it('should edit theme\'s text field', () => {
+
+      const initialState = {
+        questions: [],
+        themes : [
+          {
+            id : 0,
+            text : "old text"
+          }
+        ]
+      }
+
+      const editThemeAction = {
+        type : actionTypes.EDIT_THEME,
+        theme : {
+          id : 0,
+          text : "new text"
+        }
+      }
+
+      expect(reducer(initialState, editThemeAction).themes[0]).toEqual({
+        id : 0,
+        text : "new text"
       })
 
     })

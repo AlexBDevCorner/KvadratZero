@@ -35,6 +35,31 @@ export default (state = INITIAL_STATE, action) => {
         questions : editedQuestions
       }
 
+    case actionTypes.ADD_THEMES :
+      return {
+        ...state,
+        themes : [
+          ...state.themes,
+          ...Array(action.themeAmount)
+            .fill({})
+            .map((element, index) => models.createTheme({
+              id : index
+            }))
+        ]
+      }
+
+    case actionTypes.EDIT_THEME :
+      const editedThemes = state.themes.map(
+        (t) => t.id === action.theme.id
+          ? ({ ...t, ...action.theme })
+          : t
+      )
+
+      return {
+        ...state,
+        themes : editedThemes
+      }
+
     default :
       return state
   }
