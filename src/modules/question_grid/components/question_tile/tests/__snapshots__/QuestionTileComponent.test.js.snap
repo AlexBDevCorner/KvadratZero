@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionTileComponent tests : should properly render component 1`] = `
+<div>
+  <div
+    className="question-text"
+  >
+    question text
+  </div>
+  <div
+    className="question-points"
+  >
+    0
+  </div>
+</div>
+`;

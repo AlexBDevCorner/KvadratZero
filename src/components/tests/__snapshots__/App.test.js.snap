@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should 1`] = `
+exports[`App component tests should properly render component 1`] = `
 <Provider
   store={
     Object {

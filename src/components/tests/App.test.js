@@ -4,6 +4,10 @@ import App from '../App'
 
 const app = shallow(<App />)
 
-it('should', () => {
-  expect(app).toMatchSnapshot()
+describe('App component tests', () => {
+
+  it('should properly render component', () => {
+    expect(app).toMatchSnapshot()
+  })
+
 })
