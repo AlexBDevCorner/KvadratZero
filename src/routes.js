@@ -1,7 +1,6 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 
-import playerListModule from './modules/player_list'
 import Screens from './screens'
 
 export default () => (
